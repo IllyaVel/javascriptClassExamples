@@ -62,7 +62,7 @@ let kettle = new Kettle('Kettle','K4fdsf','Bosh','25$','Working');
 let fridge = new Fridge('Fridge','LG890','LG','3400$','Working');
 ElectricAppliances.houseInfo();
 
-//Fields to choose what applainces to show
+//Interface for work with user
 let appChoose = prompt('You can choose from this list [<coffee>,<radio>,<kettle>,<fridge>,<show all>]');
 switch(appChoose) {
     case 'coffee':
