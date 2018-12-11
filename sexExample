@@ -1,0 +1,34 @@
+class User {
+    constructor(name,age,voice) {
+        this.name = name;
+        this.age = age;
+        this.voice = voice;
+    }
+    
+    makeVoice() {
+        console.log(this.name + ' Saying ... ' + this.voice);
+    }
+    
+    showInfo(sex) {
+        this.sex = sex;
+
+        if(this.sex == "male") {
+            console.log('This is ' + this.name + " he is " + this.age + ' old ' + 'he is saying ' + this.voice);
+        } else if(this.sex == "female") {
+            console.log('This is ' + this.name + " she is " + this.age + ' old ' + 'she is saying ' + this.voice);
+        } else {
+            let error = console.log("You don't enter sex, please fix it");
+            return error;
+        }
+        
+    }
+}
+
+let tom = new User('Tom',28,'Fuuuuck');
+let angel = new User('Angel',31,'Awwwwwf');
+
+tom.makeVoice();
+angel.makeVoice();
+
+tom.showInfo('male');
+angel.showInfo('female');
