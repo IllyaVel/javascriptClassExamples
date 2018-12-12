@@ -36,3 +36,25 @@ console.log(person.name = 'Jack');
     obj.setName('Tom');
     console.log(obj.getName());
 })();
+
+//forEach
+let arr = [1,2,3,4,5,6,7,8,9,10];
+let sum = 0;//+
+arr.forEach((num)=>{
+    sum += num;
+});
+console.log(sum);
+//map
+let _squareNum = arr.map(n => n * n);//*
+console.log(_squareNum);
+
+//arrow objects
+let user  = {
+    name: 'Bob',
+    greet: () => {
+        setTimeout(() => {
+            console.log('Hello ' + this.name);
+        },2000)
+    }
+};
+user.greet();
