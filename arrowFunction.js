@@ -18,3 +18,21 @@ let person = (name) => ({
     name: 'without name'
 })
 console.log(person.name = 'Jack');
+
+//anon function
+(() => {
+    var obj = {
+        name: '',
+        surname: '',
+
+        setName: function(sName) {
+            this.name = sName;
+        },
+        getName: function() {
+            return `${this.name}`;
+        }
+    }
+
+    obj.setName('Tom');
+    console.log(obj.getName());
+})();
