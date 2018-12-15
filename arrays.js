@@ -21,6 +21,7 @@ user[4] = 'Albert';
 /* 1 --> (slice) <-- Copy array*/
 var person = ['Albert','Jack'];
 var people = person; //people[0] = 'Albert', people[1] = 'Jack'
+//If we'll change any value of array person it will change value in array named people
 
 function showArrayInfo(arrayToShow) {
 
@@ -41,3 +42,25 @@ function showArrayInfo(arrayToShow) {
     }
 }
 showArrayInfo(people); 
+
+//Deep copy
+var _user = ['Jack','Tom',true];
+
+var _people = _user.slice();
+_user[1] = 'Nick';
+
+function showArray(arrToShow) {
+    if(arrToShow == _user){
+        arrToShow.forEach((element) => {
+            console.log(element);
+        });
+    } else if(arrToShow == _people) {
+        arrToShow.forEach((element) => {
+            console.log(element);
+        });
+    } else {
+        console.error('Empty');
+    }
+}
+showArray(_people);
+showArray(_user);
