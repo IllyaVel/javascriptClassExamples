@@ -16,3 +16,28 @@ user[4] = 'Albert';
 }*/ //Output: Jack,Vika,undefined,undefined,Albert
 
 // console.log(user[3]); Output: undefined
+
+//Array Methods
+/* 1 --> (slice) <-- Copy array*/
+var person = ['Albert','Jack'];
+var people = person; //people[0] = 'Albert', people[1] = 'Jack'
+
+function showArrayInfo(arrayToShow) {
+
+    if(arrayToShow == person) {
+        setTimeout(() => {
+            arrayToShow.forEach((elements) => {
+                console.log(elements);
+            });
+        },2000);
+    } else if(arrayToShow == people) {
+        setTimeout(() => {
+            arrayToShow.forEach((elements) => {
+                console.log(elements);
+            });
+        },3000);
+    } else {
+        console.error('No array was found');
+    }
+}
+showArrayInfo(people); 
