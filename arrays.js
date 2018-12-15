@@ -80,3 +80,10 @@ console.log(array.length); // <<--- Output: 0
 //unshift < Add element at the begin of array
 array.unshift('Fruit');
 console.log(array.length); // <-- Output: 1
+
+/* 3 --> (splice) <-- delete */
+//splice() <-- delete elements and return array of them
+var arraySplice = ['A','B','C','G'];
+
+var _delete = arraySplice.splice(0,2);
+console.log(_delete); // Output: 'A','B'
