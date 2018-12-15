@@ -90,3 +90,10 @@ console.log(_delete); // Output: 'A','B'
 
 var addNew = arraySplice.splice(0,2,'T','H'); // <-- Insert at the [0],[1] position 'T','H' insted of 'A','B'
 console.log(addNew); // Output: 'T','H','C','G'
+
+/* 4 --> (concat)  */
+var vegtebels = ['Pomidor','Ogyrec','Yabloko'];
+var prices = [12,8,8];
+
+var vegetales = vegtebels.concat(prices);
+console.log(vegetales); //Output: ["Pomidor", "Ogyrec", "Yabloko", 12, 8, 8]
