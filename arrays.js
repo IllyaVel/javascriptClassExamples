@@ -64,3 +64,19 @@ function showArray(arrToShow) {
 }
 showArray(_people);
 showArray(_user);
+
+/* 2 --> (add,delete)  */
+//push < Add elements at the end of array
+var array = [];
+array.push('Apple');
+array.push('Watermelon');
+console.log(array.length);
+//pop < Remove last element at the array
+array.pop(); // <-<-- Remove ['Watermelon']
+console.log(array.length); // -<-<<-- Output: 1
+//shift < Remove first element at the array
+array.shift();
+console.log(array.length); // <<--- Output: 0
+//unshift < Add element at the begin of array
+array.unshift('Fruit');
+console.log(array.length); // <-- Output: 1
