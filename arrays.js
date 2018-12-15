@@ -97,3 +97,10 @@ var prices = [12,8,8];
 
 var vegetales = vegtebels.concat(prices);
 console.log(vegetales); //Output: ["Pomidor", "Ogyrec", "Yabloko", 12, 8, 8]
+
+/* 5 --> (join) */
+//Concat all array elements at the one string
+
+var _joinExample = ['Jack','Tom','Bill','Nick'];
+var _concat = _joinExample.join(', ');
+console.log(_concat); //Output: Jack, Tom, Bill, Nick
