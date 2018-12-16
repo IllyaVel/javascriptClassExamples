@@ -1,4 +1,13 @@
 //Arrays
+/* 1 --> (slice) <-- Copy array*/
+/* 2 --> (add,delete)  */
+/* 3 --> (splice) <-- delete */
+/* 4 --> (concat)  */
+/* 5 --> (join) */
+/* 6 --> (sort) */
+/* 7 --> (every,some) */
+/* 8 --> (filter) */ //Return array of 'true' elements
+/* 9 --> (map,forEach) */
 var user = new Array(); // <-- Empty array
 var arr = []; // <-- Empty array
 
@@ -151,3 +160,18 @@ function checkElements(value,index,arr) {
 }
 let showResult = arrayFilter.filter(checkElements); 
 console.log(showResult); //Show array which include values which less than '0';
+
+/* 9 --> (map,forEach) */
+var massive = [1,2,3,4,5,6,7,8,9];
+
+function stepen(value,index,arr) {
+    var result = value * value;
+    console.log('Square of ' + value + ' equal ' + result);
+}
+massive.forEach(stepen);
+
+function _stepen(value,index,arr) {
+    return value * value;
+}
+var _resMap = massive.map(_stepen);
+console.log(_resMap); //Return result array; Output: [...]; 
