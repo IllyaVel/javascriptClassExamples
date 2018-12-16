@@ -136,3 +136,18 @@ function arraySome(_value,_index,_array) {
 
 let resultSome = arrayEvery.some(arraySome); // If one of value in array is less than 0 Output will be: true. Else will be: false; 
 console.log(resultSome); //Output: true;
+
+/* 8 --> (filter) */ //Return array of 'true' elements
+
+var arrayFilter = [1,2,3,4,5,-1,3,4,5];
+
+function checkElements(value,index,arr) {
+    var result = false;
+
+    if(value < 0){
+        result = true;
+    }
+    return result;
+}
+let showResult = arrayFilter.filter(checkElements); 
+console.log(showResult); //Show array which include values which less than '0';
