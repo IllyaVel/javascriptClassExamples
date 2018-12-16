@@ -108,3 +108,31 @@ console.log(_concat); //Output: Jack, Tom, Bill, Nick
 /* 6 --> (sort) */
 var array = [1,2,5,6,7,4,8,3,9];
 console.log(array.sort());
+
+/* 7 --> (every,some) */
+var arrayEvery = [1,2,-1,3,45];
+
+function showArrayInfo(value,index,arrToCheck) {
+    let check = true;
+    
+    if(value < 0) {
+        check = false;
+        console.log(check);
+    } 
+    return check;
+}
+
+var pass = arrayEvery.every(showArrayInfo); // If all of value in array is more than 0 Output will be: true. Else will be: false; 
+console.log(pass); //Output: false;
+
+function arraySome(_value,_index,_array) {
+    let res = false;
+
+    if( _value < 0 ) {
+        res = true;
+    }
+    return res;
+}
+
+let resultSome = arrayEvery.some(arraySome); // If one of value in array is less than 0 Output will be: true. Else will be: false; 
+console.log(resultSome); //Output: true;
