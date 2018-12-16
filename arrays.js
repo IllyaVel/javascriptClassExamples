@@ -104,3 +104,7 @@ console.log(vegetales); //Output: ["Pomidor", "Ogyrec", "Yabloko", 12, 8, 8]
 var _joinExample = ['Jack','Tom','Bill','Nick'];
 var _concat = _joinExample.join(', ');
 console.log(_concat); //Output: Jack, Tom, Bill, Nick
+
+/* 6 --> (sort) */
+var array = [1,2,5,6,7,4,8,3,9];
+console.log(array.sort());
