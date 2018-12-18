@@ -66,4 +66,7 @@
         }
         styleP("monospace","18px","red");*/
 
+         var _href = document.querySelector("a.link");
+        _href.setAttribute("href", "https://jquery.com/");
+        console.log(_href.getAttribute("href"));
     </script>
