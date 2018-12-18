@@ -72,4 +72,9 @@
 
         var setClass = document.querySelector("div");
         setClass.className = "block__one";
+
+	const div = document.querySelector("div");
+            // div.setAttribute("style","font-family: monospace; border: 2px dashed green; font-size: 15px;"); //Old style
+            //Better to use style right under this line
+            div.style.border = '2px dashed green';
     </script>
