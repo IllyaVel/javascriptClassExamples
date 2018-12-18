@@ -69,4 +69,7 @@
          var _href = document.querySelector("a.link");
         _href.setAttribute("href", "https://jquery.com/");
         console.log(_href.getAttribute("href"));
+
+        var setClass = document.querySelector("div");
+        setClass.className = "block__one";
     </script>
